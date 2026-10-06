@@ -473,6 +473,98 @@
 				padding: 5px 0 !important;
 			}
 		}
+		/* Embedded form on the right: labels above equal-height text boxes, one aligned column.
+		 Scoped with ">" to this row's own columns: the bee-row-2 div isn't closed, so later rows sit inside it. */
+		.bee-row-2>.bee-row-content>.bee-col-3 {
+			flex-basis: 33.3333333333%
+		}
+
+		.bee-row-2>.bee-row-content>.bee-col-3>.bee-col-4 {
+			display: none
+		}
+
+		.bee-row-2>.bee-row-content>.bee-col-3>.bee-block-1 {
+			padding: 10px 10px 0;
+			text-align: left
+		}
+
+		.bee-row-2>.bee-row-content>.bee-col-3>.bee-block-1 form {
+			display: flex;
+			flex-direction: column;
+			gap: 14px;
+			width: 100%;
+			max-width: 400px;
+			margin: 0 auto
+		}
+
+		.bee-row-2>.bee-row-content>.bee-col-3>.bee-block-1 .bee-form-row .bee-field {
+			flex-direction: column;
+			flex-wrap: nowrap;
+			align-items: stretch;
+			gap: 6px;
+			padding: 0
+		}
+
+		.bee-row-2>.bee-row-content>.bee-col-3>.bee-block-1 label {
+			color: #ffffff;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 1.3;
+			padding: 0;
+			text-align: left
+		}
+
+		.bee-row-2>.bee-row-content>.bee-col-3>.bee-block-1 input:not([type=checkbox]):not([type=radio]):not([type=image]):not([type=submit]) {
+			width: 100%;
+			height: 44px;
+			min-height: 44px;
+			padding: 0 12px;
+			background-color: #ffffff;
+			border: 1px solid #ffffff;
+			border-radius: 6px;
+			color: #0d2e4e
+		}
+
+		.bee-row-2>.bee-row-content>.bee-col-3>.bee-block-1 input::placeholder {
+			color: #7b8794
+		}
+
+		.bee-row-2>.bee-row-content>.bee-col-3>.bee-block-1 input:not([type=checkbox]):not([type=radio]):not([type=submit]):focus {
+			outline: 3px solid rgba(255, 255, 255, 0.55);
+			outline-offset: 1px
+		}
+
+		/* reCAPTCHA centred above a full-width button. */
+		.bee-row-2>.bee-row-content>.bee-col-3>.bee-block-1 .bee-form-row .bee-field:has(input[type=submit]) {
+			align-items: center;
+			gap: 12px
+		}
+
+		.bee-row-2>.bee-row-content>.bee-col-3>.bee-block-1 .bee-field input[type=submit] {
+			width: 100%;
+			height: 44px;
+			min-height: 44px;
+			padding: 0 20px;
+			background-color: #ffffff;
+			border: 1px solid #ffffff;
+			border-radius: 6px;
+			color: #0d2e4e;
+			font-family: inherit;
+			font-size: 15px;
+			font-weight: 700;
+			cursor: pointer
+		}
+
+		.bee-row-2>.bee-row-content>.bee-col-3>.bee-block-1 .bee-field input[type=submit]:hover {
+			background-color: #ffe7e0
+		}
+
+		.bee-row-2>.bee-row-content>.bee-col-3>.bee-block-1>.bee-block-2 {
+			max-width: 400px;
+			margin: 0 auto;
+			padding: 12px 0 0;
+			text-align: center
+		}
 	</style>
 </head>
 
