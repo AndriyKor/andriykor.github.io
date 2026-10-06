@@ -2,7 +2,7 @@
 <html lang="">
 
 <head>
-	<title></title>
+	<title>Creatio Marketing</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&amp;display=swap" rel="stylesheet" type="text/css">
@@ -599,6 +599,40 @@
 			font-size: 18px
 		}
 
+		/* A short title above the text of each form section. */
+		.bee-row-2 .section-title {
+			color: #ffffff;
+			font-size: 30px;
+			font-weight: 700;
+			line-height: 120%;
+			text-align: center;
+			margin-bottom: 12px
+		}
+
+		.bee-row-2.bee-row-navy {
+			background-color: #0d2e4e
+		}
+
+		/* Forms B and C: the error message, as for the first form. */
+		#crt-embedded-form-445fecff-91c4-46d9-a496-c6a71ba07399 form:not([style*="display: none"]) + div,
+		#crt-embedded-form-2c5d8e52-f78b-4eff-b4e8-83a585cf7715 form:not([style*="display: none"]) + div {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			background-color: #fff1f0 !important;
+			color: #b91c1c !important;
+			border-left: 4px solid #b91c1c;
+			border-radius: 6px;
+			font-weight: 600
+		}
+
+		#crt-embedded-form-445fecff-91c4-46d9-a496-c6a71ba07399 form:not([style*="display: none"]) + div::before,
+		#crt-embedded-form-2c5d8e52-f78b-4eff-b4e8-83a585cf7715 form:not([style*="display: none"]) + div::before {
+			content: "\26A0";
+			font-size: 18px
+		}
+
+		/* Form C: its own success message (its onSuccess script adds this class). */
 		.form-success-message {
 			border: 2px solid #ffffff;
 			color: #ffffff;
@@ -620,11 +654,11 @@
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w8">
-					<div class="bee-block bee-block-1 bee-image"><img class="bee-center bee-autowidth" src="images/01-Marketing-logo.svg" style="max-width:443px;" alt="" title=""></div>
+					<div class="bee-block bee-block-1 bee-image"><img class="bee-center bee-autowidth" src="../form-a/images/01-Marketing-logo.svg" style="max-width:443px;" alt="" title=""></div>
 					<div class="bee-block bee-block-2 bee-heading">
 						<h1><span class="tinyMce-placeholder">AI-Native omnichannel marketing platform to accelerate lead-to-revenue</span> </h1>
 					</div>
-					<div class="bee-block bee-block-3 bee-image"><img class="bee-center bee-autowidth" src="images/01-Marketing-main-Screen1x.png" style="max-width:920px;" alt="" title=""></div>
+					<div class="bee-block bee-block-3 bee-image"><img class="bee-center bee-autowidth" src="../form-a/images/01-Marketing-main-Screen1x.png" style="max-width:920px;" alt="" title=""></div>
 				</div>
 				<div class="bee-col bee-col-3 bee-col-w2">
 					<div class="bee-block bee-block-1 bee-spacer bee-mobile_hide">
@@ -642,6 +676,7 @@
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-heading">
+						<p class="section-title">Get started with Creatio Marketing</p>
 						<h2><span class="tinyMce-placeholder">Gain a holistic customer view, run omnichannel marketing campaigns, orchestrate customer journeys, streamline digital campaigns, email and event marketing, orchestrate team collaboration.</span> </h2>
 					</div>
 				</div>
@@ -653,12 +688,6 @@
 						data-crt-embedded-form-url="https://forms.creatio.my/17dc4157-bdd3-4420-b56a-724f242a4198/index.html" 
 						data-crt-embedded-form-target="#crt-embedded-form-17dc4157-bdd3-4420-b56a-724f242a4198">
 					</script>
-
-					<div id="crt-embedded-form-445fecff-91c4-46d9-a496-c6a71ba07399" style="margin-top: 40px"></div>
-					<script src="https://d3gyzugod9s6e6.cloudfront.net/JS/crt-embedded-form-loader.js" data-crt-embedded-form-url="https://forms.creatio.my/445fecff-91c4-46d9-a496-c6a71ba07399/index.html" data-crt-embedded-form-target="#crt-embedded-form-445fecff-91c4-46d9-a496-c6a71ba07399"></script>
-
-					<div id="crt-embedded-form-2c5d8e52-f78b-4eff-b4e8-83a585cf7715" style="margin-top: 40px"></div>
-					<script src="https://d3gyzugod9s6e6.cloudfront.net/JS/crt-embedded-form-loader.js" data-crt-embedded-form-url="https://forms.creatio.my/2c5d8e52-f78b-4eff-b4e8-83a585cf7715/index.html" data-crt-embedded-form-target="#crt-embedded-form-2c5d8e52-f78b-4eff-b4e8-83a585cf7715"></script>
 					
 					<div class="bee-block bee-block-2 bee-text">
 						<div style="font-size: 14px; line-height: 120%; font-family: inherit; color: #ffffff;" class="bee-text-content">
@@ -719,6 +748,37 @@
 				</div>
 			</div>
 		</div>
+		<div class="bee-row bee-row-2 bee-row-navy">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w1">
+					<div class="bee-block bee-block-1 bee-spacer bee-mobile_hide">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-heading">
+						<p class="section-title">See it in action</p>
+						<h2><span class="tinyMce-placeholder">Book a personal demo with our product experts and discover how Creatio Marketing fits your team.</span></h2>
+					</div>
+				</div>
+				<div class="bee-col bee-col-3 bee-col-w3">
+					<div class="bee-block bee-block-1 bee-form">
+					<div id="crt-embedded-form-445fecff-91c4-46d9-a496-c6a71ba07399"></div>
+					<script src="https://d3gyzugod9s6e6.cloudfront.net/JS/crt-embedded-form-loader.js" data-crt-embedded-form-url="https://forms.creatio.my/445fecff-91c4-46d9-a496-c6a71ba07399/index.html" data-crt-embedded-form-target="#crt-embedded-form-445fecff-91c4-46d9-a496-c6a71ba07399"></script>
+					<div class="bee-block bee-block-2 bee-text">
+						<div style="font-size: 14px; line-height: 120%; font-family: inherit; color: #ffffff;" class="bee-text-content">
+							<p style="font-size: 14px; line-height: 16px;"><span style="font-size: 10px; line-height: 12px;">By submitting this form, you confirm that you agree to the storing and processing of your personal data by Our Company as described in the <a href="https://www.bpmonline.com/privacy-policy" target="_blank" style="text-decoration: underline; color: #ffffff;" rel="noopener">Privacy Policy</a>.</span></p>
+						</div>
+					</div>
+					</div>
+					<div class="bee-col bee-col-4 bee-col-w2">
+						<div class="bee-block bee-block-1 bee-spacer bee-mobile_hide">
+							<div class="spacer" style="height:60px;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="bee-row bee-row-5">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w4">
@@ -751,6 +811,37 @@
 					<div class="bee-block bee-block-3 bee-text">
 						<div style="font-size: 14px; line-height: 120%; font-family: inherit; color: #0d2e4e;" class="bee-text-content">
 							<p style="font-size: 14px; line-height: 16px;">Consolidated digital workplace to plan, budget, execute, and track marketing campaigns and projects of any complexity.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-2">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w1">
+					<div class="bee-block bee-block-1 bee-spacer bee-mobile_hide">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-heading">
+						<p class="section-title">Have a question?</p>
+						<h2><span class="tinyMce-placeholder">Leave your contact details and our team will get back to you shortly with answers about pricing, features or onboarding.</span></h2>
+					</div>
+				</div>
+				<div class="bee-col bee-col-3 bee-col-w3">
+					<div class="bee-block bee-block-1 bee-form">
+					<div id="crt-embedded-form-2c5d8e52-f78b-4eff-b4e8-83a585cf7715"></div>
+					<script src="https://d3gyzugod9s6e6.cloudfront.net/JS/crt-embedded-form-loader.js" data-crt-embedded-form-url="https://forms.creatio.my/2c5d8e52-f78b-4eff-b4e8-83a585cf7715/index.html" data-crt-embedded-form-target="#crt-embedded-form-2c5d8e52-f78b-4eff-b4e8-83a585cf7715"></script>
+					<div class="bee-block bee-block-2 bee-text">
+						<div style="font-size: 14px; line-height: 120%; font-family: inherit; color: #ffffff;" class="bee-text-content">
+							<p style="font-size: 14px; line-height: 16px;"><span style="font-size: 10px; line-height: 12px;">By submitting this form, you confirm that you agree to the storing and processing of your personal data by Our Company as described in the <a href="https://www.bpmonline.com/privacy-policy" target="_blank" style="text-decoration: underline; color: #ffffff;" rel="noopener">Privacy Policy</a>.</span></p>
+						</div>
+					</div>
+					</div>
+					<div class="bee-col bee-col-4 bee-col-w2">
+						<div class="bee-block bee-block-1 bee-spacer bee-mobile_hide">
+							<div class="spacer" style="height:60px;"></div>
 						</div>
 					</div>
 				</div>
